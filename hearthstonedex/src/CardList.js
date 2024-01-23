@@ -25,8 +25,8 @@ const CardList = () => {
         }
 
         const data = await response.json();
-        console.log(data);
-        setCards(data);
+        console.log(data.Basic);
+        setCards(data.Basic);
       } catch (error) {
         console.error(error);
       }
